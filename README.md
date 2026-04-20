@@ -24,7 +24,33 @@ Opinionated Claude Code plugin. Powerline statusline with caveman badge, model, 
 /plugin install ccrc@ccrc
 ```
 
-Statusline registers automatically via `plugin.json`. No `settings.json` edit needed.
+A `SessionStart` hook symlinks the statusline script to `~/.claude/ccrc-statusline.sh` on every Claude Code launch (the plugin's install path is hashed and changes on update — the symlink gives you a stable target).
+
+Then add this to `~/.claude/settings.json`:
+
+```json
+"statusLine": {
+  "type": "command",
+  "command": "bash ~/.claude/ccrc-statusline.sh"
+}
+```
+
+One-time edit. Restart Claude Code.
+
+> **Why the manual step?** Claude Code only honors `hooks`, `mcpServers`, `lspServers`, `monitors`, `agents`, and `skills` in plugin manifests — `statusLine` in `plugin.json` is silently ignored. And `${CLAUDE_PLUGIN_ROOT}` doesn't expand inside `~/.claude/settings.json`. The symlink hook bridges that gap.
+
+### Upgrading from 0.1.0
+
+0.1.0 shipped a `statusLine` block in `plugin.json` that Claude Code never read — so your bar was empty. 0.2.0 fixes that with the hook + manual `settings.json` edit above. Add the snippet and restart.
+
+### Uninstall
+
+```
+/plugin uninstall ccrc@ccrc
+rm ~/.claude/ccrc-statusline.sh
+```
+
+Also remove the `statusLine` block from `~/.claude/settings.json`.
 
 ## Customize
 
