@@ -2,7 +2,7 @@
 
 Opinionated Claude Code plugin. Powerline statusline with caveman badge, model, git, and token usage.
 
-<!-- screenshot here: drop a screenshot of the statusline in your terminal -->
+![ccrc statusline](docs/statusline.png)
 
 ## What you get
 
