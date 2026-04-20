@@ -1,0 +1,13 @@
+{
+  "name": "ccrc",
+  "version": "0.1.0",
+  "description": "Opinionated Claude Code setup. Powerline statusline with caveman badge, model, cwd, git branch, worktree, token usage.",
+  "author": {
+    "name": "Patrick Oberherr",
+    "url": "https://github.com/poberherr"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/powerline-statusline.sh\""
+  }
+}
