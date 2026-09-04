@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ccrc",
-  "description": "Opinionated Claude Code setup — powerline statusline and more.",
+  "description": "Opinionated Claude Code setup \u2014 powerline statusline and more.",
   "owner": {
     "name": "Patrick Oberherr",
     "url": "https://github.com/poberherr"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "ccrc",
-      "description": "Powerline statusline: caveman badge, model, cwd, git branch+worktree, token usage. Nerd Font required.",
+      "description": "Two-line powerline statusline (session name, model, git, PR, context, cost, rate limits) plus a subagent statusline. Nerd Font required.",
       "source": "./",
       "category": "productivity"
     }

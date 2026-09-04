@@ -1,7 +1,7 @@
 {
   "name": "ccrc",
-  "version": "0.2.0",
-  "description": "Opinionated Claude Code setup. Powerline statusline with caveman badge, model, cwd, git branch, worktree, token usage.",
+  "version": "0.3.0",
+  "description": "Opinionated Claude Code setup. Two-line powerline statusline with session name, model, effort, cwd, git, PR, context bar, cost and rate limits \u2014 plus a subagent statusline.",
   "author": {
     "name": "Patrick Oberherr",
     "url": "https://github.com/poberherr"

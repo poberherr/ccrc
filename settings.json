@@ -1,0 +1,6 @@
+{
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "bash \"$HOME/.claude/ccrc-subagent-statusline.sh\""
+  }
+}
